@@ -1,0 +1,148 @@
+.drawer-component {
+  border: 1px solid;
+  width: 300px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  background-color: black;
+  text-align: center;
+
+  .list-component {
+    .nav-link-container {
+      svg {
+        display: none;
+      }
+      .lebel {
+        display: none;
+      }
+    }
+  }
+
+  @media (max-width: 1023px) {
+    // width: 100px;
+    display: none;
+  }
+  h4,
+  h2,
+  h6,
+  div {
+    color: white;
+    text-transform: uppercase;
+  }
+
+  h4,
+  h5 {
+    margin: 2px;
+    padding: 0;
+  }
+}
+
+.drawer-component {
+  .top-section {
+    padding: 18px 0px;
+    border-bottom: 1px solid grey;
+  }
+  .logo {
+    width: 85px;
+    height: 85px;
+    border: 1px solid;
+    border-radius: 50%;
+    color: black;
+    background: white;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 60px;
+    font-family: cursive;
+  }
+
+  .role {
+    line-height: 24px;
+  }
+
+  .name,
+  .role {
+    padding: 6px 0px;
+  }
+}
+
+.drawer-component {
+  .list-component {
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      text-align: left;
+    }
+
+    li {
+      line-height: 3;
+      padding: 0px 32px;
+      text-transform: uppercase;
+      position: relative;
+
+      &:hover {
+        background-color: rgba(255, 255, 255, 0.08);
+      }
+    }
+
+    li {
+      border-bottom: 1px solid grey;
+      div {
+        text-align: left;
+      }
+
+      a {
+        color: white;
+        text-decoration: none;
+        width: 100%;
+        display: block;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1200px) {
+  .drawer-component {
+    width: 64px;
+    margin: 0;
+    padding: 0;
+
+    .name,
+    .role {
+      display: none;
+    }
+
+    .logo {
+      width: 45px;
+      height: 45px;
+      font-size: 45px;
+    }
+
+    .list-component {
+      li {
+        padding: 10px;
+        width: 100%;
+        box-sizing: border-box;
+
+        div {
+          text-align: center;
+        }
+      }
+      .nav-link-container {
+        a {
+          padding: 10px 0px;
+        }
+        svg {
+          display: inline-block;
+        }
+        .label,
+        .dot {
+          display: none;
+        }
+      }
+    }
+  }
+}

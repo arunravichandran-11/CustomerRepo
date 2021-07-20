@@ -1,0 +1,28 @@
+.nav-link-container {
+  a {
+    outline: none;
+    span.dot {
+      border-radius: 50%;
+      width: 6px;
+      height: 6px;
+      background: white;
+      position: absolute;
+      top: 21px;
+      left: 16px;
+      display: none;
+    }
+  }
+
+  a:hover {
+    // text-decoration: underline;
+    border-bottom: 2px solid;
+  }
+
+  a.active {
+    // text-decoration: underline;
+    border-bottom: 2px solid;
+    span.dot {
+      display: inline-block;
+    }
+  }
+}
